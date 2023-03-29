@@ -150,6 +150,11 @@ const Denonciation = () => {
                   </div>
                 </div>
               </div>
+              <div className="input-item pb-4">
+              <h6 class=""></h6>
+              <img src="" alt="" class=""/>
+                
+              </div>
             </form>
           </div>
         </div>
