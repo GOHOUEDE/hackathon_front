@@ -3,7 +3,7 @@ import React from "react";
 const Denonciation = () => {
   return (
     <div className="denonciation-container">
-      <div className="container">
+      <div className="container pt-5">
         <div className="row justify-content-center align-items-center g-2">
           <div className="col d-flex align-align-items-end justify-content-center">
             <h1 className="mx-1">Dénoncer un abus</h1>
@@ -80,7 +80,7 @@ const Denonciation = () => {
                   Ajoutez un audio
                 </label>
                 <div
-                  class="w-100 h-25 py-2"
+                  className="w-100 h-25 py-2"
                   style={{ backgroundColor: "rgba(217, 217, 217, 1)" ,borderRadius: "5px"}}
                 >
                   <img
@@ -132,7 +132,7 @@ const Denonciation = () => {
               </div>
               <div className="input-item pb-4">
                
-                <div className="sexe d-flex align-items-center justify-content-between" style={{ backgroundColor: "rgba(217, 217, 217, 1)" ,borderRadius: "5px"}}>
+                <div className="sexe d-flex align-items-center justify-content-around w-100 h-25 py-2"  style={{ backgroundColor: "rgba(217, 217, 217, 1)" ,borderRadius: "5px"}}>
                   <div className="urgence">
                     <input type="radio" className="mx-1" name="temoin" />
                     <label htmlFor="Sémi-urgent" className="form-label">
