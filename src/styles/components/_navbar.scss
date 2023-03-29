@@ -8,10 +8,9 @@
       @include flex_space;
     }
     &-logo {
-      width: 300px;
+      width: 180px;
       height: 60px;
       @include flex_center;
-      transform: scale(1.1);
 
       img {
         @include cover_img;
@@ -38,5 +37,10 @@
       bottom: -5px;
       left: 0;
     }
+  }
+  .nav-active {
+    color: $black;
+    text-decoration: none;
+    font-weight: bold;
   }
 }

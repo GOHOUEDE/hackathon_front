@@ -6,21 +6,26 @@
   position: relative;
 }
 
-.s-btn {
-  width: 100%;
-  background-color: $primary-color;
-  color: $white;
-  border: none;
-  outline: none;
-  border-radius: $radius;
-  font-weight: 600;
-  @include flex_center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+a{
+  text-decoration: none;
 }
-.yellow-btn {
+
+// .s-btn {
+//   width: 100%;
+//   background-color: $primary-color;
+//   color: $white;
+//   border: none;
+//   outline: none;
+//   border-radius: $radius;
+//   font-weight: 600;
+//   @include flex_center;
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   font-size: 18px;
+// }
+.yellow-btn, .s-btn {
   width: 100%;
   background-color: $yellow;
   color: $black;
@@ -31,7 +36,12 @@
   @include flex_center;
   padding: 12px 20px;
   margin-top: 10px;
+  font-size: 18px;
   margin-bottom: 10px;
+
+  svg{
+    margin: 5px;
+  }
 }
 
 .yel-btn {
@@ -46,5 +56,6 @@
   padding: 12px 20px;
   padding-bottom: 15px;
   margin-top: 10px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
