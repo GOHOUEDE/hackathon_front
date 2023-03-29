@@ -1,0 +1,22 @@
+@mixin flex_space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin cover_img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+@mixin contain_img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
