@@ -3,7 +3,7 @@ import React from "react";
 const Denonciation = () => {
   return (
     <div className="denonciation-container">
-      <div className="container pt-5">
+      <div className="container pt-5 w-75">
         <div className="row justify-content-center align-items-center g-2">
           <div className="col d-flex align-align-items-end justify-content-center">
             <h1 className="mx-1">Dénoncer un abus</h1>
@@ -32,7 +32,7 @@ const Denonciation = () => {
                 <input type="text" className="form-control"  placeholder="Pas obligatoire , nous respectons votre anonymat"/>
 
               </div>
-              <div className="input-item pb-4">
+              <div className="input-item py-4">
                 <label htmlFor="Sexe" className="form-label fw-bold">
                   Sexe
                 </label>
@@ -135,13 +135,13 @@ const Denonciation = () => {
                 <div className="sexe d-flex align-items-center justify-content-around w-100 h-25 py-2"  style={{ backgroundColor: "rgba(217, 217, 217, 1)" ,borderRadius: "5px"}}>
                   <div className="urgence">
                     <input type="radio" className="mx-1" name="temoin" />
-                    <label htmlFor="Sémi-urgent" className="form-label">
+                    <label htmlFor="Sémi-urgent" className="form-label fs-4">
                     Témoin
                     </label>
                   </div>
                   <div className="urgence">
                     <input type="radio" className="mx-1" name="temoin" />
-                    <label htmlFor="Urgent" className="form-label">
+                    <label htmlFor="Urgent" className="form-label fs-4">
                     Victime
                     </label>
                   </div>
@@ -150,10 +150,13 @@ const Denonciation = () => {
                   </div>
                 </div>
               </div>
-              <div className="input-item pb-4">
-              <h6 class=""></h6>
-              <img src="" alt="" class=""/>
+              <div className="input-item pb-4 justify-content-end d-flex align-items-center w-100">
+              <h6 className="my-3">Ajouter votre emplacement</h6>
+              <img src="./assets/images/My Location.png" alt="" className=""/>
                 
+              </div>
+              <div className="">
+            <button type="submit" className="yellow-btn" >Dénoncer</button>                
               </div>
             </form>
           </div>

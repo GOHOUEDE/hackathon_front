@@ -1,3 +1,6 @@
 input{
-    background-color: transparent;
+    background-color: transparent !important;
+}
+textarea{
+    background-color: transparent !important;
 }
