@@ -1,10 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Login, NotFound, SignUp } from "./pages";
+import { Home, Login, NotFound, Notification, SignUp, Denonciation, DenonciationProcess, Education } from "./pages";
 import { routes } from "./routes";
 import DefaultLayout from "./layouts/DefaultLayout";
-import Education from "./pages/frontOffice/Education";
-import DenonciationProcess from "./pages/frontOffice/DenonciationProcess";
-import Denonciation from "./pages/frontOffice/Denonciation";
 
 function App() {
   return (
@@ -18,6 +15,7 @@ function App() {
           <Route path={routes.education} element={<Education />} />
           <Route path={routes.process} element={<DenonciationProcess />} />
           <Route path={routes.denounce} element={<Denonciation />} />
+          <Route path={routes.notification} element={<Notification />} />
         </Route>
       </Routes>
     </Router>
