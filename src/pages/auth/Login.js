@@ -31,7 +31,7 @@ const Login = () => {
       email:email,
       password:password
     }
-    AuthService().login(data).then((res)=> {
+    AuthService.login(data).then((res)=> {
       console.log(res)
     }).catch((err)=> console.log(err))
   }
@@ -85,7 +85,7 @@ const Login = () => {
         </div>
       </div>
       <div className="login-wraper">
-        <img src="./assets/images/img2.jpeg" alt="" />
+        <img src="./assets/images/img5.jpeg" alt="" />
       </div>
     </div>
   );

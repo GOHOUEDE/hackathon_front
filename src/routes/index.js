@@ -4,5 +4,8 @@ export const routes =  {
     signup:"/s'inscrire",
     passwordReset:"/mot-de-pass-oublie",
     home:"/",
+    education:"/education",
+    denounce:"/denoncer",
+    process:"/suivre-une-demande",
     denounce:"denoncer"
 }

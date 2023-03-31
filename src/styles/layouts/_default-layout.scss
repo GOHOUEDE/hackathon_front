@@ -1,0 +1,7 @@
+.default-layout-contaier{
+    width: 100%;
+    min-height: 100vh;
+    @include flex_space;
+    flex-direction: column;
+    
+}
