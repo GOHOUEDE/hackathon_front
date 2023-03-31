@@ -87,13 +87,13 @@ SignUp = () => {
               d’utilisations
             </div>
             <button type="submit" class="s-btn" name="btnsbm">
-              connexion
+              S'inscrire
             </button>
           </form>
           <div class="redirect">
             Déja un compte ?{" "}
             <Link to={routes.login}>
-              <span class="signup">Connectez vous.</span>
+              <span class="signup">Connectez vous</span>
             </Link>
           </div>
         </div>

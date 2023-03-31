@@ -4,4 +4,12 @@
     padding: 15px 25px;
     color: $white;
     @include flex_space;
+
+    svg{
+        margin-right: 5px;
+    }
+
+    path{
+        color: $yellow;
+    }
 }

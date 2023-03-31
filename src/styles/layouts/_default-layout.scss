@@ -2,9 +2,14 @@
     width: 100%;
     min-height: 100vh;
     @include flex_space;
+    align-items: initial;
     flex-direction: column;
+    background-color: $g-white;
 
-    // main{
-    //     height: calc(100% - 200px);
-    // }
+
+
+    main{
+        min-height: calc(100vh - 127px);
+        
+    }
 }
