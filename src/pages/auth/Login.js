@@ -11,12 +11,15 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes";
+import { useNavigate } from "react-router";
+
 import AuthService from "../../services/AuthService";
 
 const Login = () => {
   const [inputType, setInputType] = useState("password");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   const handleEmail = (e) =>{
     setEmail(e.target.value)
@@ -27,13 +30,15 @@ const Login = () => {
 
   const submitForm = (e) =>{
     e.preventDefault()
-    const data = {
-      email:email,
-      password:password
-    }
-    AuthService.login(data).then((res)=> {
-      console.log(res)
-    }).catch((err)=> console.log(err))
+    navigate(`${routes.denounce}`)
+
+    // const data = {
+    //   email:email,
+    //   password:password
+    // }
+    // AuthService.login(data).then((res)=> {
+    //   console.log(res)
+    // }).catch((err)=> console.log(err))
   }
 
   const handleInputType = () => {
@@ -59,11 +64,11 @@ const Login = () => {
           <form className="" onSubmit={submitForm}>
             <div className="input-ctn">
               <FaPhoneAlt />
-              <input type="email" placeholder="Email" onChange={handleEmail} />
+              <input type="email" placeholder="Email" onChange={handleEmail} required />
             </div>
             <div className="input-ctn">
               <FaLock />
-              <input type={inputType} placeholder="Mot de Passe" onChange={handlePassword}/>
+              <input type={inputType} placeholder="Mot de Passe" onChange={handlePassword} required/>
               <span className="psw" onClick={handleInputType}>
                 {inputType == "password" ? <FaEye /> : <FaEyeSlash />}
               </span>

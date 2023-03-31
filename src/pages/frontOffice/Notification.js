@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { routes } from "../../routes";
 
 const Notification = () => {
-  const follow = () => {};
-  return (
+
+    return (
     <div className="notification-container">
       <div className="notification-wraper">
         <div className="notification-msg">

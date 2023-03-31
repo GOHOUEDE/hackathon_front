@@ -10,26 +10,12 @@ import {
   FaUserAlt,
   FaUserCircle,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { routes } from "../../routes";
-export default class SignUp extends React.Component {
-  state = {
-    phone: "",
-    password: "",
-    gender: "",
-  };
-  handleSubmit = (event) => {
-    event.preventDefault();
-    const data = {
-      phone: this.state.phone,
-      password: this.state.password,
-      gender: this.state.gender,
-    };
-    axios.post("http://127.0.0.1:8000/register", { data }).then((res) => {});
-  };
-}
-SignUp = () => {
+  
+const SignUp = () => {
   const [inputType, setInputType] = useState("password");
+  const navigate = useNavigate()
 
   const handleInputType = () => {
     if (inputType == "text") {
@@ -38,6 +24,12 @@ SignUp = () => {
       setInputType("text");
     }
   };
+
+  const submitForm = (e) =>{
+    e.preventDefault()
+    navigate(routes.denounce)
+  }
+
 
   return (
     <div className="signup-container">
@@ -52,20 +44,20 @@ SignUp = () => {
             <FaUserCircle />
           </div>
 
-          <form class="">
+          <form class="" onSubmit={submitForm}>
             <div className="input-ctn">
               <FaPhoneAlt />
               <input
-                type="tel"
-                placeholder="Numero de téléphone"
-                name="phone"
+                type="email"
+                placeholder="Email"
+                name="email" required
               />
             </div>
 
             <div className="input-ctn">
               <FaPhoneAlt />
-              <select class="" name="gender">
-                <option disabled>Genre</option>
+              <select class="" name="gender" required>
+                <option >Genre</option>
                 <option>Masculin</option>
                 <option>Feminin</option>
                 <option>Autre</option>
@@ -76,7 +68,7 @@ SignUp = () => {
               <input
                 type={inputType}
                 placeholder="Mot de Passe"
-                name="password"
+                name="password" required
               />
               <span class="psw" onClick={handleInputType}>
                 {inputType == "password" ? <FaEye /> : <FaEyeSlash />}
@@ -104,3 +96,4 @@ SignUp = () => {
     </div>
   );
 };
+export default SignUp;

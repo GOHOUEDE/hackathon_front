@@ -1,5 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Login, NotFound, Notification, SignUp, Denonciation, DenonciationProcess, Education, Profil } from "./pages";
+import {
+  Home,
+  Login,
+  NotFound,
+  Notification,
+  SignUp,
+  Denonciation,
+  DenonciationProcess,
+  Education,
+  Profil,
+} from "./pages";
 import { routes } from "./routes";
 import DefaultLayout from "./layouts/DefaultLayout";
 

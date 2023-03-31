@@ -31,7 +31,7 @@
       &-container {
         @include flex_center;
         flex-direction: column;
-        padding-top: 60px;
+        padding-top: 30px;
         .heading {
           font-size: 24px;
           font-weight: bold;
@@ -41,9 +41,7 @@
         .subHeading {
           font-size: 24px;
         }
-        .icon-ctn {
-          margin: 15px;
-          
+        .icon-ctn {          
           svg {
             height: 89px;
             width: 83px;
@@ -92,7 +90,7 @@
         }
         .signup {
           font-weight: bold;
-          color: $primary-color;
+          // color: $primary-color;
         }
       }
     }
