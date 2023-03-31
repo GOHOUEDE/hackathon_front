@@ -1,18 +1,46 @@
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { routes } from "../../routes";
 
 const Navbar = () => {
-    return (
-        <div className='navbar-container'>
-            <div className="nav-wraper">
-                <div className="nav-logo">
-                    <img src="./assets/logo/logo.png" alt="" />
-                </div>
-                <div className="nav-box">
-                    <div className="nav-item"></div>
-                </div>
-            </div>
+  return (
+    <div className="navbar-container">
+      <div className="navbar-wraper">
+        <div className="navbar-logo">
+          <img src="./assets/logo/logo.png" alt="" />
         </div>
-    );
+        <div className="navbar-box">
+          <div className="navbar-item">
+            <div className="yellow-btn">Appel d'urgence</div>{" "}
+          </div>
+          <div className="navbar-item">
+            <NavLink
+              to={routes.denounce}
+              className={(nav) => (nav.isActive ? "nav-active" : "nav-act")}
+            >
+              Dénoncer
+            </NavLink>
+          </div>
+          <div className="navbar-item">
+            <NavLink
+              to={routes.process}
+              className={(nav) => (nav.isActive ? "nav-active" : "nav-act")}
+            >
+              Suivre la demande
+            </NavLink>
+          </div>
+          <div className="navbar-item">
+            <NavLink
+              to={routes.login}
+              className={(nav) => (nav.isActive ? "nav-active" : "nav-act")}
+            >
+              Se connecter
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

@@ -1,7 +1,10 @@
-.default-layout-contaier{
+.default-layout-container{
     width: 100%;
     min-height: 100vh;
     @include flex_space;
     flex-direction: column;
-    
+
+    // main{
+    //     height: calc(100% - 200px);
+    // }
 }

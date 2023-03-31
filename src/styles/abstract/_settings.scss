@@ -20,3 +20,31 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.yellow-btn {
+  width: 100%;
+  background-color: $yellow;
+  color: $black;
+  border: none;
+  outline: none;
+  border-radius: $radius;
+  font-weight: 600;
+  @include flex_center;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.yel-btn {
+  width: 100%;
+  background-color: transparent;
+  color: $black;
+  border: 1px solid $yellow;
+  outline: none;
+  border-radius: $radius;
+  font-weight: 600;
+  @include flex_center;
+  padding: 12px 20px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
