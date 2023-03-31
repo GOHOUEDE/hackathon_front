@@ -1,6 +1,8 @@
 import React from "react";
 
 import { FaBullhorn, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { routes } from "../../routes";
 const Home = () => {
   return (
     <div className="home-container">
@@ -18,13 +20,17 @@ const Home = () => {
           <div>
             {" "}
             <div className="yellow-btn">
-              {" "}
-              <FaBullhorn /> Dénoncer un abus
+              <Link to={routes.denounce}>
+                <FaBullhorn /> Dénoncer un abus
+              </Link>
             </div>
           </div>
           <div>
             {" "}
-            <div className="yel-btn">Suivre sa demande</div>
+            <div className="yel-btn">
+              {" "}
+              <Link to={routes.process}>Suivre sa demande</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -7,5 +7,6 @@ export const routes =  {
     education:"/education",
     denounce:"/denoncer",
     process:"/suivre-une-demande",
-    denounce:"denoncer"
+    notification:"demande-envoyer",
+    profil:"mon-profil"
 }

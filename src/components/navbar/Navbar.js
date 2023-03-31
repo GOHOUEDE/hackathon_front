@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { routes } from "../../routes";
 
 const Navbar = () => {
@@ -7,7 +7,10 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="navbar-wraper">
         <div className="navbar-logo">
-          <img src="./assets/logo/logo.png" alt="" />
+          <Link to={routes.home}>
+            {" "}
+            <img src="./assets/logo/logo.png" alt="" />
+          </Link>
         </div>
         <div className="navbar-box">
           <div className="navbar-item">
