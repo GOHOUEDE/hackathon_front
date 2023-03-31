@@ -2,7 +2,7 @@ import React from 'react';
 
 const DenonciationProcess = () => {
     return (
-        <div>
+        <div className='process-container'>
             
         </div>
     );
