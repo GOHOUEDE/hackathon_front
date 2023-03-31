@@ -1,0 +1,27 @@
+.notification-container {
+  @include flex_center;
+  width: 100%;
+  height: 100%;
+
+  .notification {
+    &-wraper {
+      // @include flex_center;
+      flex-direction: column;
+    }
+    &-msg {
+      font-weight: 600;
+      font-size: 31px;
+      span {
+        color: #07810c;
+        font-weight: bold;
+        font-size: 31px;
+      }
+    }
+    &-code {
+      font-weight: 700;
+      font-size: 24px;
+      color: $secondary-color;
+      text-align: center;
+    }
+  }
+}
